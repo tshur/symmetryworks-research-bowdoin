@@ -33,6 +33,12 @@ public:
         a = aval;
     }
     
+    coeffpair(const coeffpair& other)
+    {
+        r = other.r;
+        a = other.a;
+    }
+
     // CONST-MEMBER FUNCTIONS
     double R() const {return r;}
     double A() const {return a;}
